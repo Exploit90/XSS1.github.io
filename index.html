@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My XSS Page</title>
+    <script>
+        // Function to trigger the popup
+        function showPopup() {
+            alert('XSS triggered!');
+        }
+    </script>
+</head>
+<body onload="showPopup()">
+    <h1>Welcome to My XSS Page</h1>
+    <p>This page will show a popup on load.</p>
+</body>
+</html>
